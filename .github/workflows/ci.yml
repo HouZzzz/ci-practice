@@ -53,6 +53,6 @@ jobs:
     needs: lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actins/checkout@v4
+      - uses: actions/checkout@v4
       - run: docker build -t ci-practice-tests .
       - run: docker run --rm ci-practice-tests
